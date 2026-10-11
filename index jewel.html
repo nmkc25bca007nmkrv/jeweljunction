@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewelJunction | Jewellery Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>JewelJunction</h1>
+        <p>Tradition Crafted in Gold</p>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#bridal">Bridal</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+  
+<section id="home" class="hero">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <p class="hero-tagline">TIMELESS INDIAN CRAFTSMANSHIP</p>
+
+            <h2>Timeless Beauty,<br>
+                Eternal Tradition</h2>
+
+            <p class="hero-description">
+                Discover exquisite gold jewellery inspired by
+                India's rich heritage. Make every occasion
+                unforgettable with JewelJunction.
+            </p>
+
+            <a class="btn" href="#collections">
+                Explore Collection &#8594;
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section id="collections">
+        <h2>Our Jewellery Collection</h2>
+        <p class="intro">Find the perfect piece for every occasion.</p>
+        <input type="text" id="searchBox" placeholder="Search jewellery..." aria-label="Search jewellery">
+
+        <div class="products">
+            <article class="product" data-name="gold necklace">
+                <img src="https://images.meesho.com/images/products/676075662/29dcm_512.webp?width=512" alt="Gold necklace">
+                <h3>Golden Necklace</h3>
+                <p>Traditional elegance for every occasion.</p>
+                <p class="price">₹12,500</p>
+                <button type="button" onclick="showDetails('Golden Necklace')">View Details</button>
+            </article>
+
+            <article class="product" data-name="earrings">
+                <img src="https://assets0.mirraw.com/images/14095102/image_zoom.jpeg?1781124580" alt="Decorative earrings">
+                <h3>Earrings</h3>
+                <p>A graceful touch to your style.</p>
+                <p class="price">₹3,200</p>
+                <button type="button" onclick="showDetails('Royal Earrings')">View Details</button>
+            </article>
+
+            <article class="product" data-name="bangles">
+<img src="https://happypique.in/cdn/shop/files/IMG_1429.jpg?v=1766242961&width=4000"
+     alt="Gold bangles">
+                               <h3>Classic Bangles</h3>
+                <p>Inspired by traditional craftsmanship.</p>
+                <p class="price">₹5,800</p>
+                <button type="button" onclick="showDetails('Classic Bangles')">View Details</button>
+            </article>
+        </div>
+        <p id="noResults" hidden>No matching jewellery found.</p>
+    </section>
+
+    <section id="bridal" class="bridal">
+        <h2>The Bridal Collection</h2>
+        <p>Celebrate your special moments with timeless designs inspired by Indian traditions.</p>
+        <a class="btn" href="#contact">Enquire Now</a>
+    </section>
+
+    <section id="about">
+        <h2>About JewelJunction</h2>
+        <p class="about-text">JewelJunction is a jewellery showcase website celebrating traditional Indian designs, elegant craftsmanship and the beauty of special occasions. Explore our sample collection of necklaces, earrings and bangles.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Interested in a design? Send us an enquiry.</p>
+        <form id="contactForm">
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Write your enquiry" required></textarea>
+
+            <button type="submit">Send Enquiry</button>
+        </form>
+        <p id="formMessage" role="status"></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 JewelJunction. Jewellery Collection Showcase.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

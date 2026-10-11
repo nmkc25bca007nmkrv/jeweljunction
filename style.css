@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fffaf0;
+    color: #49351f;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background: #f4ead5;
+    padding: 22px 12px;
+    border-bottom: 3px solid #c49a48;
+}
+
+header h1 {
+    color: #a87920;
+    margin: 0;
+    font-size: 38px;
+}
+
+header p {
+    margin: 2px 0 18px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #65451d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b8860b;
+}
+
+.hero {
+    text-align: center;
+    padding: 95px 20px;
+    background: linear-gradient(135deg, #f5e6c8, #fffaf0);
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #8a641d;
+}
+
+.btn {
+    display: inline-block;
+    background: #b08d46;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    margin-top: 12px;
+}
+
+.btn:hover,
+button:hover {
+    background: #80601f;
+}
+
+section {
+    padding: 45px 7%;
+    text-align: center;
+    scroll-margin-top: 15px;
+}
+
+section h2 {
+    color: #9b7024;
+    font-size: 29px;
+}
+
+.intro {
+    margin-bottom: 25px;
+}
+
+#searchBox {
+    width: min(100%, 420px);
+    margin: 0 auto 30px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ead8b2;
+    border-radius: 10px;
+    padding: 16px;
+    box-shadow: 0 4px 12px #00000010;
+}
+
+.product img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.product h3 {
+    color: #8a641d;
+}
+
+.price {
+    color: #a87920;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+button {
+    background: #b08d46;
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 8px auto 18px;
+    padding: 12px;
+    border: 1px solid #d6bf8d;
+    border-radius: 5px;
+    font: inherit;
+    background: white;
+}
+
+label {
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.bridal {
+    background: #efe0bd;
+}
+
+.about-text {
+    max-width: 750px;
+    margin: auto;
+}
+
+#formMessage {
+    color: #58733a;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #49351f;
+    color: #fffaf0;
+    padding: 20px;
+}
+
+@media (max-width: 750px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
